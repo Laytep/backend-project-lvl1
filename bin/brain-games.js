@@ -1,15 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env node.
+import { nameQ } from '../src/sli.js'
 
-const name = "James";
-
-const person = {
-    first: name
-}
-
-console.log(person);
-
-const sayHelloLinting = (fName) => {
-    console.log(`Hello linting, ${fName}`)
-}
-
-sayHelloLinting('James');
+const name = nameQestion;
+console.log(`Hello, ${name}!`)

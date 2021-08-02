@@ -4,14 +4,14 @@
   "description": "[![Actions Status](https://github.com/Laytep/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Laytep/backend-project-lvl1/actions)",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
-  }
+    "brain-games": "bin/brain-games.js",
+    "code": "brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "module"
     "url": "git+https://github.com/Laytep/backend-project-lvl1.git"
   },
   "author": "",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Laytep/backend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Laytep/backend-project-lvl1#readme"
+  "homepage": "https://github.com/Laytep/backend-project-lvl1#readme",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
