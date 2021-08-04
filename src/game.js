@@ -43,3 +43,41 @@ Let's try again, ${nameQestion}!`);
     console.log(`Congratulations, ${nameQestion}!`);
   }
 };
+
+let round1 = 0;
+
+export const game2 = () => {
+  if (round1 < 3) {
+    const number1 = getRandomInt(1, 50);
+    const number2 = getRandomInt(1, 50);
+    const operator = getRandomInt(1, 15);
+    let operator1 = '';
+    if (operator <= 5) {
+      operator1 = '+';
+    } else if (operator <= 10) {
+      operator1 = '-';
+    } else if (operator <= 15) {
+      operator1 = '*';
+    }
+    console.log(`Question: ${number1} ${operator1} ${number2}`);
+    let correctAnswer = 0;
+    if (operator <= 5) {
+      correctAnswer = number1 + number2;
+    } else if (operator <= 10) {
+      correctAnswer = number1 - number2;
+    } else if (operator <= 15) {
+      correctAnswer = number1 * number2;
+    }
+
+    const firstQestion = readlineSync.question('Your answer: ');
+
+    if (String(correctAnswer) === firstQestion) {
+      console.log('Correct!'); round1 += 1; game2();
+    } else {
+      console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${correctAnswer}'. 
+Let's try again, ${nameQestion}`);
+    }
+  } else {
+    console.log(`Congratulations, ${nameQestion}!`);
+  }
+};
