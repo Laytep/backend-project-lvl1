@@ -1,3 +1,5 @@
+https://asciinema.org/a/3rUlbJWgMUKkoJDgn9nzVQCW9
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Laytep/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Laytep/backend-project-lvl1/actions)
 
