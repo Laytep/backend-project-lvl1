@@ -99,10 +99,40 @@ export const game3 = () => {
 
     const firstQestion = readlineSync.question('Your answer: ');
 
-    console.log(result);
-
     if (String(result) === firstQestion) {
       console.log('Correct!'); round2 += 1; game3();
+    } else {
+      console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${result}'. 
+Let's try again, ${nameQestion}`);
+    }
+  } else {
+    console.log(`Congratulations, ${nameQestion}!`);
+  }
+};
+
+let round3 = 0;
+
+export const game4 = () => {
+  if (round3 < 3) {
+    let str = '';
+    const number1 = getRandomInt(5, 10);
+    const position = getRandomInt(0, number1 - 1);
+    const changes = getRandomInt(1, 5);
+    let result = 0;
+    for (let i = 0; i < number1; i += 1) {
+      if (position !== i) {
+        str += `${i * changes} `;
+      } else {
+        str += '.. ';
+        result += i * changes;
+      }
+    }
+    console.log(`Question: ${str}`);
+
+    const firstQestion = readlineSync.question('Your answer: ');
+
+    if (String(result) === firstQestion) {
+      console.log('Correct!'); round3 += 1; game4();
     } else {
       console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${result}'. 
 Let's try again, ${nameQestion}`);
