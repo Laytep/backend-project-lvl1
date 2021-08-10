@@ -81,3 +81,33 @@ Let's try again, ${nameQestion}`);
     console.log(`Congratulations, ${nameQestion}!`);
   }
 };
+
+let round2 = 0;
+
+export const game3 = () => {
+  if (round2 < 3) {
+    const number1 = getRandomInt(1, 100);
+    const number2 = getRandomInt(1, 100);
+    console.log(`Question: ${number1} ${number2}`);
+    let result = 0;
+    for (let i = 100; i > 0; i -= 1) {
+      if (number1 % i === 0 && number2 % i === 0) {
+        result += i;
+        break;
+      }
+    }
+
+    const firstQestion = readlineSync.question('Your answer: ');
+
+    console.log(result);
+
+    if (String(result) === firstQestion) {
+      console.log('Correct!'); round2 += 1; game3();
+    } else {
+      console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${result}'. 
+Let's try again, ${nameQestion}`);
+    }
+  } else {
+    console.log(`Congratulations, ${nameQestion}!`);
+  }
+};
