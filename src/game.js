@@ -141,3 +141,38 @@ Let's try again, ${nameQestion}`);
     console.log(`Congratulations, ${nameQestion}!`);
   }
 };
+
+let round4 = 0;
+
+export const game5 = () => {
+  if (round4 < 3) {
+    const number1 = getRandomInt(1, 100);
+    let result = 1;
+    for (let i = (number1 - 1); i > 1; i -= 1) {
+      if (number1 % i === 0) {
+        result += 1;
+      }
+    }
+
+    console.log(`Question: ${number1}`);
+
+    const firstQestion = readlineSync.question('Your answer: ');
+
+    if (result === 1 && firstQestion === 'yes') {
+      console.log('Correct!'); round4 += 1; game5();
+    } else if (result !== 1 && firstQestion === 'no') {
+      console.log('Correct!'); round4 += 1; game5();
+    } else if (result === 1 && firstQestion === 'no') {
+      console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, ${nameQestion}!`);
+    } else if (result !== 1 && firstQestion === 'yes') {
+      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.
+Let's try again, ${nameQestion}!`);
+    } else {
+      console.log(`'${firstQestion}' is wrong answer ;(. Correct answer was ${result === 1 ? "'yes'" : "'no'"}
+Let's try again, ${nameQestion}!`);
+    }
+  } else {
+    console.log(`Congratulations, ${nameQestion}!`);
+  }
+}
