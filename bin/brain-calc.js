@@ -1,4 +1,4 @@
-#!/usr/bin/env node.
+#!/usr/bin/env node
 import { nameQestion, game2 } from '../src/game.js';
 
 const name = nameQestion;
