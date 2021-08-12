@@ -75,7 +75,7 @@ export const game2 = () => {
       console.log('Correct!'); round1 += 1; game2();
     } else {
       console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${correctAnswer}'. 
-Let's try again, ${nameQestion}`);
+Let's try again, ${nameQestion}!`);
     }
   } else {
     console.log(`Congratulations, ${nameQestion}!`);
