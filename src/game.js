@@ -103,7 +103,7 @@ export const game3 = () => {
       console.log('Correct!'); round2 += 1; game3();
     } else {
       console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${result}'. 
-Let's try again, ${nameQestion}`);
+Let's try again, ${nameQestion}!`);
     }
   } else {
     console.log(`Congratulations, ${nameQestion}!`);
@@ -135,7 +135,7 @@ export const game4 = () => {
       console.log('Correct!'); round3 += 1; game4();
     } else {
       console.log(`'${firstQestion}'is wrong answer ;(. Correct answer was '${result}'. 
-Let's try again, ${nameQestion}`);
+Let's try again, ${nameQestion}!`);
     }
   } else {
     console.log(`Congratulations, ${nameQestion}!`);
