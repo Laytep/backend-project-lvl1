@@ -1,5 +1,5 @@
-#!/usr/bin/env node.
-import { nameQestion } from '../src/sli.js'
+#!/usr/bin/env node
 
-const name = nameQestion;
-console.log(`Hello, ${name}!`);
+import { hello } from '../src/sli.js';
+
+hello();
