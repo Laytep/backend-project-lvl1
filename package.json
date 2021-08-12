@@ -10,17 +10,18 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "/brain-progression.js",
-    "brain-prime": "/brain-prime.js",
-    },
+    "brain-prime": "/brain-prime.js"
+    }
    },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Laytep/backend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Laytep",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Laytep/backend-project-lvl1/issues"
