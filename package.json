@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Laytep/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Laytep/backend-project-lvl1/actions)",
   "main": "index.js",
+  "files": {
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -11,6 +12,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js",
     "code": "brain-games.js"
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
