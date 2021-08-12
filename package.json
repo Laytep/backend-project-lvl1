@@ -28,6 +28,7 @@
   "homepage": "https://github.com/Laytep/backend-project-lvl1#readme",
   "type": "module",
   "dependencies": {
+    "natives": "^1.1.6",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
