@@ -3,9 +3,9 @@ import readlineSync from 'readline-sync';
 console.log('Welcome to the Brain Games!');
 export const nameQestion = readlineSync.question('May I have your name? ');
 
-const getRandomInt = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+const getRandomInt = (min1, max1) => {
+  const min = Math.ceil(min1);
+  const max = Math.floor(max1);
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
@@ -175,4 +175,4 @@ Let's try again, ${nameQestion}!`);
   } else {
     console.log(`Congratulations, ${nameQestion}!`);
   }
-}
+};
