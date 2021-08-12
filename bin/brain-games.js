@@ -1,4 +1,5 @@
-#!/usr/bin/env node
-import greetUser from '../src/sli.js';
+#!/usr/bin/env node.
+import nameQestion from '../src/sli.js';
 
-greetUser();
+const name = nameQestion;
+console.log(`Hello, ${name}!`);
